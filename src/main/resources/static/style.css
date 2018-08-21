@@ -1,18 +1,8 @@
 @charset "ISO-8859-1";
 
 h1{
-	color = blue;
+	color:blue;
 }
 
 
 
-body{
-	background-image: url(pic1.jpg);
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-}
-
-.form{
-	position: relative;
-}

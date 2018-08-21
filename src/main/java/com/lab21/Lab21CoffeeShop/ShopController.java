@@ -8,19 +8,20 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ShopController {
 	
-	@RequestMapping("/coffee")
+	@RequestMapping("/")
 	public ModelAndView homePage()  {
-		return new ModelAndView("lab", "test1", "Home!");
+		return new ModelAndView("lab", "test1", "Home");
 	}
 	
 	@RequestMapping("/form")
-	public ModelAndView formPage()  {
-		return new ModelAndView("form", "register", "Registration");
+	public String formPage()  {
+		return "form";
 	}
 	
-	@RequestMapping("/summary")
-	public ModelAndView sumPage()  {
-		return new ModelAndView("summary", "actions", "name");
+	@RequestMapping("username")
+	public ModelAndView sumPage(@RequestParam("firstName") String fName, @RequestParam("lastName") String lName) {
+		return new ModelAndView("summary", "personName", fName + " " + lName);
 	}
+	
 
 }
