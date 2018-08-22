@@ -1,4 +1,4 @@
-package com.lab21.Lab21CoffeeShop;
+package com.coffeeshop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

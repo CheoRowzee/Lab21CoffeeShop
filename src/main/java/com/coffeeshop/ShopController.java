@@ -1,4 +1,4 @@
-package com.lab21.Lab21CoffeeShop;
+package com.coffeeshop;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,10 +8,10 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ShopController {
 	
-	@RequestMapping("/")
-	public ModelAndView homePage()  {
-		return new ModelAndView("lab", "test1", "Home");
-	}
+//	@RequestMapping("/")
+//	public ModelAndView homePage()  {
+//		return new ModelAndView("lab", "test1", "Home");
+//	}
 	
 	@RequestMapping("/form")
 	public String formPage()  {
