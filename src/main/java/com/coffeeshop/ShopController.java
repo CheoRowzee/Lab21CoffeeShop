@@ -19,8 +19,8 @@ public class ShopController {
 	}
 	
 	@RequestMapping("username")
-	public ModelAndView sumPage(@RequestParam("firstName") String fName, @RequestParam("lastName") String lName) {
-		return new ModelAndView("summary", "personName", fName + " " + lName);
+	public ModelAndView sumPage(@RequestParam("birthdate") String birthday) {
+		return new ModelAndView("summary", "personName", birthday);
 	}
 	
 

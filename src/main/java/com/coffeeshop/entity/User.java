@@ -1,74 +1,80 @@
 package com.coffeeshop.entity;
 
 public class User {
-	
-	private String name;
+
+	private String id;
+	private String firstName;
+	private String lastName;
+	private String phone;
 	private String email;
-	private String userID;
-	private int age;
-	
-	
-	public User()  {
-		userID= "";
-		name = "";
-		age = 0;
-		email = "";
-		
+	private String password;
+
+	public User() {
+		// TODO Auto-generated constructor stub
 	}
-	
-	
-	public User(String userID, String name, String email, int age) {
-		this.userID = userID;
-		this.name = name;
-		this.age = age;
+
+	public User(String id, String firstName, String lastName, String phone, String email, String password) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.phone = phone;
 		this.email = email;
-	}
-	
-	public String getUserID() {
-		return userID;
-	}
-	
-	public void setUserID(String userID)  {
-		this.userID = userID;
+		this.password = password;
 	}
 
-
-	public String getName() {
-		return name;
+	public String getId() {
+		return id;
 	}
 
-
-	public void setName(String name) {
-		this.name = name;
+	public void setId(String id) {
+		this.id = id;
 	}
 
-
-	public int getAge() {
-		return age;
+	public String getFirstName() {
+		return firstName;
 	}
 
-
-	public void setAge(int age) {
-		this.age = age;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
 	public String getEmail() {
 		return email;
-			}
-	
-	public void setEmail(String email)  {
-		this.email = email;
-		
 	}
 
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", email=" + email + ", userID=" + userID + ", age=" + age + "]";
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", phone=" + phone
+				+ ", email=" + email + ", password=" + password + "]";
 	}
-
-
-	
- 
 
 }

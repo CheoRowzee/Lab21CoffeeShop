@@ -6,81 +6,8 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Home</title>
-<link href="css/style.css" rel="stylesheet">
-<style type="text/css">
-h1 {
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-		"AppleGothic", sans-serif;
-	color: white;
-	background:;
-	font-size: 92px;
-	padding: 80px 50px;
-	text-align: center;
-	text-shadow: 1px -1px 0 #767676;
-	text-transform: uppercase;
-	text-rendering: optimizeLegibility;
-	text-shadow: text-shadow: 
-		-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
+<link href="indexstyle.css" rel="stylesheet">
 
-body {
-	background:
-		url("http://2.cdn.site.mobi/c/m.westportcoffeehouse.com/949kd60/db94257304c2494a5d9c5e0ba75aff6e/0/1920");
-	;
-}
-
-p {
-	font-size: 20%;
-	color: white;
-	background:;;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-		"AppleGothic", sans-serif;
-	border-text: brown;
-	font-size: 50px;
-	padding: 80px 50px;
-	text-align: center;
-	text-shadow: 1px -1px 0 #767676;
-	text-transform: uppercase;
-	text-rendering: optimizeLegibility;
-	text-shadow: text-shadow: 
-		-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-a {
-	font-size: 200%;
-	color: rgb(0, 255, 0);
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-		"AppleGothic", sans-serif;
-	border-text: brown;
-	font-size: 50px;
-	padding: 80px 50px;
-	text-align: center;
-	text-shadow: 1px -1px 0 #767676;
-	text-transform: uppercase;
-	text-rendering: optimizeLegibility;
-	text-shadow: text-shadow: 
-		-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-legend {
-	color: white;
-}
-
-div {
-	size: 50%;
-}
-
-table {
-	color: white;
-	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
-		"AppleGothic", sans-serif;
-	width: 100%;
-	background:
-		url("https://www.newhollandcoffee.com/wp-content/themes/new-holland-coffee-co/img/coffee-bean-piles.png");
-	font-size: x-large;
-	height: 100px;
-}
-</style>
 </head>
 
 <body>
@@ -90,7 +17,7 @@ table {
 
 	<div>
 		<p>Coffee House Menu</p>
-		<table border=1px;>
+		<table border="1">
 
 			<c:forEach var="item" items="${items}">
 				<tr>

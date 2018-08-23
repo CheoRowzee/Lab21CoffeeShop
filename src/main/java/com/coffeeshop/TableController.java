@@ -18,15 +18,25 @@ public class TableController {
 	@Autowired
 	ItemsJdbcDao dao2;
 	
-	@RequestMapping("")  
+	@RequestMapping("test")  
 	public ModelAndView index()  {
 		return new ModelAndView("index", "items", dao2.findAll());
 	}
 	
 	@RequestMapping("/userIn")  
-	public ModelAndView addNew(@RequestParam("id") String id, @RequestParam("name") String name, @RequestParam("email") String mail, @RequestParam("age") int age)  {
-		dao.insertUser(id, name, mail, age);
+	public ModelAndView addNew(@RequestParam("firstName") String fname, @RequestParam("lastName") String lname, 
+			@RequestParam("email") String email, 
+			@RequestParam("phone") String phone, 
+			@RequestParam("password") String pass) {
+		dao.insertUser(fname, lname, email, phone, pass);
 		return new ModelAndView("form", "user", dao.findAll());
 	} 
+	
+	@RequestMapping("delete")
+	public ModelAndView deleteCust(@RequestParam("id") String userID)  {
+	dao.deleteUser(userID);
+	return new ModelAndView("index", "user", dao.findAll());
+	}
 }
+
 
